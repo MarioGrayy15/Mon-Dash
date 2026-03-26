@@ -25,14 +25,14 @@ def update_table(selected_region, selected_types):
     if selected_region:
         filtered_df = filtered_df[filtered_df["region"] == selected_region]
 
-    if selected_types:
-        if "ALL" not in selected_types:
-            filtered_df = filtered_df[filtered_df["type"].isin(selected_types)]
+    if selected_types and "ALL" not in selected_types:
+        filtered_df = filtered_df[filtered_df["type"].isin(selected_types)]
 
     filtered_df = filtered_df.drop(
         columns=[col for col in COLUMNS_TO_HIDE if col in filtered_df.columns]
     )
 
-    badge_text = f"Nombre de lignes affichées : {len(filtered_df)}"
-
-    return filtered_df.to_dict("records"), badge_text
+    return (
+        filtered_df.to_dict("records"),
+        f"Nombre de lignes affichées : {len(filtered_df)}"
+    )
