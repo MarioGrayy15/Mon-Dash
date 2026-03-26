@@ -28,3 +28,9 @@ server = app.server
 
 if __name__ == "__main__":
     app.run(debug=True)
+    dbc.Nav(
+    [
+        dbc.NavLink("Page 1", href="/", active="exact", className="nav-link-custom"),
+        dbc.NavLink("Page 2", href="/page2", active="exact", className="nav-link-custom"),
+        dbc.NavLink("Page 3", href="/page3", active="exact", className="nav-link-custom"),
+    ],
