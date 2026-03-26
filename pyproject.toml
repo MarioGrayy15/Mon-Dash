@@ -1,0 +1,15 @@
+[project]
+name = "mon-dash"
+version = "0.1.0"
+description = "Application Dash avocado"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dash",
+    "dash-bootstrap-components",
+    "pandas",
+    "plotly",
+]
+
+[tool.uv]
+package = false
