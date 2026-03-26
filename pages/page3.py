@@ -5,13 +5,17 @@ import dash_bootstrap_components as dbc
 dash.register_page(__name__, path="/page3", name="Page 3")
 
 # Lecture des fichiers markdown
-with open("expli1.md", "r", encoding="utf-8") as f:
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+with open(os.path.join(BASE_DIR, "expli1.md"), encoding="utf-8") as f:
     md1 = f.read()
 
-with open("expli2.md", "r", encoding="utf-8") as f:
+with open(os.path.join(BASE_DIR, "expli2.md"), encoding="utf-8") as f:
     md2 = f.read()
 
-with open("expli3.md", "r", encoding="utf-8") as f:
+with open(os.path.join(BASE_DIR, "expli3.md"), encoding="utf-8") as f:
     md3 = f.read()
 
 layout = dbc.Container(
