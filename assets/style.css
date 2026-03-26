@@ -1,47 +1,15 @@
-body {
-    background-image: url("/assets/BG.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-}
-
-.card-custom {
-    background-color: rgba(30, 30, 30, 0.95);
+.nav-link-custom {
+    color: white !important;
+    background-color: rgba(111, 66, 193, 0.9);
+    margin: 5px;
     border-radius: 10px;
-    padding: 20px;
-    color: white;
-}
-
-.card-header-custom {
-    background: linear-gradient(90deg, #2c8ed6, #1abc9c);
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 20px;
+    padding: 12px 18px !important;
     font-weight: bold;
     text-align: center;
 }
 
-.select-custom {
-    background-color: #6f42c1;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-
-.badge-custom {
-    background-color: #6f42c1;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-.nav-link-custom {
-    color: white !important;
-    background-color: rgba(111, 66, 193, 0.9);
-    margin-right: 10px;
-    border-radius: 8px;
-    padding: 10px 16px !important;
-    font-weight: bold;
+.nav-link-custom:hover {
+    background-color: #5a32a3 !important;
 }
 
 .nav-link-custom.active {
