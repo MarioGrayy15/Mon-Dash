@@ -11,11 +11,13 @@ app = dash.Dash(
 
 app.layout = dbc.Container(
     [
-        html.Div(
+        dbc.Nav(
             [
-                dbc.NavLink("Page 1", href="/", style={"marginRight": "15px", "color": "white"}),
+                dbc.NavLink("Page 1", href="/", active="exact", className="nav-link-custom"),
+                dbc.NavLink("Page 2", href="/page2", active="exact", className="nav-link-custom"),
             ],
-            style={"padding": "15px"}
+            pills=True,
+            className="mb-4 mt-3"
         ),
         dash.page_container
     ],

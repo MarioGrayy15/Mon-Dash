@@ -28,9 +28,23 @@ body {
     padding: 5px;
 }
 
+
 .badge-custom {
     background-color: #6f42c1;
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
+}
+.nav-link-custom {
+    color: white !important;
+    background-color: rgba(111, 66, 193, 0.9);
+    margin-right: 10px;
+    border-radius: 8px;
+    padding: 10px 16px !important;
+    font-weight: bold;
+}
+
+.nav-link-custom.active {
+    background-color: #2c8ed6 !important;
+    color: white !important;
 }
